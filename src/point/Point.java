@@ -1,6 +1,6 @@
 package point;
 
-public class Point {
+public class Point implements Drawable{
 	private int x, y;
 	
 	public Point() {
@@ -37,6 +37,11 @@ public class Point {
 	}
 	
 	public void show(){
+		System.out.println("좌표 : ("+x+", "+y+") 에 점을 그렸습니다.");
+	}
+
+	@Override
+	public void draw() {
 		System.out.println("좌표 : ("+x+", "+y+") 에 점을 그렸습니다.");
 	}
 	
