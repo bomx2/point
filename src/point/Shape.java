@@ -1,6 +1,6 @@
 package point;
 
-public abstract class Shape {
+public abstract class Shape implements Visible{
 	
 	private String color;
 	
@@ -17,4 +17,9 @@ public abstract class Shape {
 	 }
 
 	public abstract double calculateArea();
+	
+	@Override
+	public boolean visible() {
+		return false;
+	}
 }

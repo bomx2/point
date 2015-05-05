@@ -1,13 +1,12 @@
 package point;
 
-public class Point implements Drawable{
+public class Point implements Drawable, Visible{
 	private int x, y;
 	
 	public Point() {
 	}
 	
 	public Point(int x, int y) {
-		super();
 		this.x = x;
 		this.y = y;
 	}
@@ -44,6 +43,10 @@ public class Point implements Drawable{
 	public void draw() {
 		System.out.println("좌표 : ("+x+", "+y+") 에 점을 그렸습니다.");
 	}
-	
+
+	@Override
+	public boolean visible() {
+		return false;
+	}
 
 }

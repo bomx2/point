@@ -1,23 +1,23 @@
 package point;
 
-public class Rect extends Shape{
-	private int w;
-	private int h;
+public class Rect extends Shape implements Drawable{
+	private int height;
+	private int width;
 	
 	public int getW() {
-		return w;
+		return width;
 	}
 
-	public void setW(int w) {
-		this.w = w;
+	public void setW(int width) {
+		this.width = width;
 	}
 
 	public int getH() {
-		return h;
+		return height;
 	}
 
-	public void setH(int h) {
-		this.h = h;
+	public void setH(int height) {
+		this.height = height;
 	}
 
 	public void draw() {
@@ -26,7 +26,7 @@ public class Rect extends Shape{
 
 	@Override
 	public double calculateArea() {
-		return (double)w*h;
+		return (double)width*height;
 	}
 
 
